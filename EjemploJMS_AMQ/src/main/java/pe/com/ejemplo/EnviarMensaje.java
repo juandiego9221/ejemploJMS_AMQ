@@ -33,17 +33,7 @@ public class EnviarMensaje {
 		}catch(JMSException e){
 			System.out.println("Excepcion " + e);
 		}finally {
-			try{
-				if(session!=null){
-					session.close();
-				}
-				if(conn!=null){
-					conn.close();
-				}
-			}catch(Exception ex){
-				System.out.println("Excepcion " + ex);
 
-			}
 		}
 		
 	}
